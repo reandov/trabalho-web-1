@@ -10,6 +10,7 @@
     <!-- Link para CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
       <div class="navbar">
@@ -22,8 +23,11 @@
     </header>
 
     <section>
-      <h1 style="text-align: center; margin-top: 15%">Deixe sua mensagem!</h1>
-      <div class="main-content">
+      <h1 class="titulo">
+        Deixe sua mensagem!<span class="efeito-cursor">|</span>
+      </h1>
+
+      <div class="conteudo">
         <div>
           <div style="margin: 10px">
             <label>Nome</label>
@@ -33,13 +37,13 @@
             <label>Mensagem</label>
             <input type="text" id="mensagem" />
           </div>
-          <button class="submit" onclick="enviarMensagem()">Submit!</button>
+          <button class="enviar" onclick="enviarMensagem()">Enviar</button>
         </div>
       </div>
     </section>
 
     <section>
-      <ul id="board"></ul>
+      <ul id="quadro"></ul>
     </section>
 
     <footer>

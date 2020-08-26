@@ -101,30 +101,46 @@ footer button {
   background-color: #9f69b8;
 }
 
-.main-content {
+.conteudo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 5%;
 }
 
-.wmessage,
-h1 {
+.titulo {
   font-size: 60px;
+  text-align: center;
+  margin-top: 15%;
 }
 
-.submit {
+.enviar {
   color: white;
-  margin-left: 75%;
+  margin-left: 78%;
 }
 
-.close {
+.excluir {
   padding: 6px 8px 6px 8px;
   margin-left: 50px;
   font-size: x-large;
 }
 
-.close:hover {
+.excluir:hover {
   background-color: #166b4f;
   color: white;
+}
+
+.efeito-cursor {
+  color: #2e3d48;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #03363d;
+  }
 }

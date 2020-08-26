@@ -13,12 +13,12 @@ function enviarMensagem() {
   var nome = document.getElementById("nome").value;
   var mensagem = document.getElementById("mensagem").value;
   var msg_node = document.createTextNode(`${nome}: ${mensagem}`);
-  var close = document.getElementsByClassName("close");
+  var close = document.getElementsByClassName("excluir");
 
   if (nome === "" || mensagem === "") {
     alert("Escreva alguma coisa!");
   } else {
-    document.getElementById("board").appendChild(li);
+    document.getElementById("quadro").appendChild(li);
   }
 
   li.appendChild(msg_node);
@@ -28,7 +28,7 @@ function enviarMensagem() {
 
   var button = document.createElement("BUTTON");
   var txt = document.createTextNode("\u00D7");
-  button.className = "close";
+  button.className = "excluir";
   button.appendChild(txt);
   li.appendChild(button);
 
