@@ -14,18 +14,45 @@
     <header>
       <div class="navbar">
         <h1>Trabalho Web</h1>
-        <button class="button1">Color 1</button>
-        <button class="button2">Color 2</button>
-        <button class="button3">Color 3</button>
+        <button class="button1" onclick="changeColor('#F08B8B')">
+          #F08B8B
+        </button>
+        <button class="button2" onclick="changeColor('#8BCBF0')">
+          #8BCBF0
+        </button>
+        <button class="button3" onclick="changeColor('#D08BF0')">
+          #D08BF0
+        </button>
+        <button onclick="changeColor('#FFFFFF')">#FFFFFF</button>
       </div>
     </header>
 
     <section>
+      <h1 style="text-align: center; margin-top: 15%">Deixe sua mensagem!</h1>
       <div class="main-content">
-        <h1>TESTE!</h1>
-        <h1>FUNCIONANDO!</h1>
+        <div>
+          <div style="margin: 10px">
+            <label>Nome</label>
+            <input type="text" id="nome" />
+          </div>
+          <div style="margin: 10px">
+            <label>Mensagem</label>
+            <input type="text" id="mensagem" />
+          </div>
+          <button class="submit" onclick="printParams()">Submit!</button>
+        </div>
       </div>
     </section>
+
+    <section class="message-list">
+      <ul id="board"></ul>
+    </section>
+
+    <footer>
+      <div>
+        <button onclick="exibirCreditos()">Créditos</button>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

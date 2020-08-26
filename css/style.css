@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-top: 2vh;
-  background-color: #f8f9f9;
-  padding: 0;
   font-family: "Roboto";
   color: #03363d;
+}
+
+body {
+  background-color: #f8f9f9;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5vh;
 }
 
 button {
@@ -17,9 +19,46 @@ button {
   outline: none;
   cursor: pointer;
   background-color: #17494d;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: bold;
+}
+
+button:hover {
+  background-color: #26787e;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+}
+
+li {
+  font-weight: bold;
+  list-style: none;
+  margin: 10px;
+  /* text-align: left; */
+}
+
+footer {
+  background-color: #ebebeb;
+  margin-top: 18vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer button {
+  font-size: xx-large;
+  padding: 10px;
+  background-color: gray;
 }
 
 .navbar {
@@ -38,16 +77,81 @@ button {
   background-color: #f08b8b;
 }
 
+.navbar .button1:hover {
+  background-color: #bb6b6b;
+}
+
 .navbar .button2 {
   background-color: #8bcbf0;
+}
+
+.navbar .button2:hover {
+  background-color: #6291ac;
 }
 
 .navbar .button3 {
   background-color: #d08bf0;
 }
 
+.navbar .button3:hover {
+  background-color: #9f69b8;
+}
+
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
+}
+
+.wmessage,
+h1 {
+  font-size: 60px;
+}
+
+.submit {
+  color: white;
+  margin-left: 75%;
+}
+
+/* .board {
+  margin-top: 5%;
+} */
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+
+.message p {
+  font-weight: bold;
+}
+
+.message button {
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.close {
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* .message-list {
+  display: flex;
+  justify-content: space-between;
+} */
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
 }
