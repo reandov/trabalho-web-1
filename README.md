@@ -4,4 +4,4 @@ Repositório contendo os códigos e ideias para o trabalho da cadeira de Desenvo
 ## Tecnologias utilizadas
 - HTML5;
 - CSS3;
-- JavaSript;
+- JavaScript;
