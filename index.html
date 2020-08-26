@@ -14,16 +14,10 @@
     <header>
       <div class="navbar">
         <h1>Trabalho Web</h1>
-        <button class="button1" onclick="changeColor('#F08B8B')">
-          #F08B8B
-        </button>
-        <button class="button2" onclick="changeColor('#8BCBF0')">
-          #8BCBF0
-        </button>
-        <button class="button3" onclick="changeColor('#D08BF0')">
-          #D08BF0
-        </button>
-        <button onclick="changeColor('#FFFFFF')">#FFFFFF</button>
+        <button class="button1" onclick="mudarCor('#F08B8B')">#F08B8B</button>
+        <button class="button2" onclick="mudarCor('#8BCBF0')">#8BCBF0</button>
+        <button class="button3" onclick="mudarCor('#D08BF0')">#D08BF0</button>
+        <button onclick="mudarCor('#FFFFFF')">#FFFFFF</button>
       </div>
     </header>
 
@@ -39,12 +33,12 @@
             <label>Mensagem</label>
             <input type="text" id="mensagem" />
           </div>
-          <button class="submit" onclick="printParams()">Submit!</button>
+          <button class="submit" onclick="enviarMensagem()">Submit!</button>
         </div>
       </div>
     </section>
 
-    <section class="message-list">
+    <section>
       <ul id="board"></ul>
     </section>
 
