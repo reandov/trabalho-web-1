@@ -1,28 +1,26 @@
-function mudarCor(color) {
+function changeColor(color) {
   document.body.style.backgroundColor = color;
 }
 
 function exibirCreditos() {
   alert(
-    "Disciplina: Desenvolvimento de Software para Web\nMembros:\nEvandro Rodrigues\nJordão Rodrigues\nLeonardo David"
+    "Disciplina: Desenvolvimento de Software para Web\nEvandro Rodrigues\nJordão Rodrigues\nLeonardo David"
   );
 }
 
-function enviarMensagem() {
+function printParams() {
   var li = document.createElement("li");
   var nome = document.getElementById("nome").value;
   var mensagem = document.getElementById("mensagem").value;
-  var msg_node = document.createTextNode(`${nome}: ${mensagem}`);
+  var boardmsg = document.createTextNode(`${nome}: ${mensagem}`);
   var close = document.getElementsByClassName("close");
+  li.appendChild(boardmsg);
 
   if (nome === "" || mensagem === "") {
     alert("Escreva alguma coisa!");
   } else {
     document.getElementById("board").appendChild(li);
   }
-
-  li.appendChild(msg_node);
-
   document.getElementById("nome").value = "";
   document.getElementById("mensagem").value = "";
 
